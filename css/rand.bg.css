@@ -1,0 +1,52 @@
+/* Portrait */
+@media all and (orientation:portrait) {
+/* Portrait styles */
+.randbg {
+background: black url('../images/1.jpg') no-repeat center center fixed;
+background-size: 100vw auto;
+  }
+}
+/* Landscape */
+@media all and (orientation:landscape) {
+/* Landscape styles */
+.randbg {
+background: black url('../images/1.jpg') no-repeat center center fixed;
+background-size: auto 100vh;
+  }
+}
+
+
+
+.randbg.bg1 {
+background-image: url('../images/1.jpg');
+}
+.randbg.bg2 {
+background-image: url('../images/2.jpg');
+}
+.randbg.bg3 {
+background-image: url('../images/3.jpg');
+}
+.randbg.bg4 {
+background-image: url('../images/4.jpg');
+}
+.randbg.bg5 {
+background-image: url('../images/5.jpg');
+}
+.randbg.bg6 {
+background-image: url('../images/6.jpg');
+}
+.randbg.bg7 {
+background-image: url('../images/7.jpg');
+}
+.randbg.bg8 {
+background-image: url('../images/8.jpg');
+}
+.randbg.bg9 {
+background-image: url('../images/9.jpg');
+}
+.randbg.bg0 {
+background-image: url('../images/0.jpg');
+}
+.randbg.bg10 {
+background-image: url('../images/10.jpg');
+}
