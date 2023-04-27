@@ -1,0 +1,43 @@
+* { margin:0; padding:0; font: 12px Arial; }
+h1 { float:left; font: 18px Arial; font-weight: bold; width: 100%; margin: 10px 0 10px 0; width: 100%; }
+h2 { float:left; font: 14px Arial; font-weight: bold; width: 100%; margin: 20px 0 10px 0; width: 100%; }
+/*.centralizar { position: relative; width: 900px; left: 50%; margin-left: -450px; }*/
+
+#topo {float: left; width: 100%; margin:5px 0 5px 0; }
+#topo .logo { display: block; float:left; margin: 10px 0 10px 10px; }
+#topo .full-banner { display: block; float:left; margin:0 0 0 50px; }
+
+#cabecalho { float:left; display: block; width:100%; background:#2c2c2c; }
+.menu { color:#cecece; padding: 5px 0 5px 5px; }
+.menu li { list-style: none; display: inline; }
+.menu li a { font: 14px Arial; color:#cecece; text-decoration: none; margin: 0 10px 0 0; }
+
+#menu-esquerdo { float:left; width: 20px; margin: 10px 0 0 5px; }
+#menu-esquerdo ul { list-style: none; margin: 6px 0; }
+#menu-esquerdo ul li a { color: #2c2c2c; }
+
+#menu-direito { float:right; width: 160px; margin: 10px 0; }
+
+#conteudo { position: relative; float:left; width: 910px; height:100%; }
+#principal { position: relative; float: left; width: 580px; }
+#resultado { margin: 10px 0;}
+
+.banner-cabecalho { float:left; width: 728px; height: 90px; background: #f5b01d; margin: 10px 0 10px 115px; }
+.banner-arranha-ceu { float:right; width: 160px; height: 600px; background: #f5b01d; margin: 0; }
+
+.campo-cpf { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-1 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-2 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-3 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-4 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-5 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-6 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-7 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-8 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+.digito-cpf-9 { font: 25px Arial; border: 1px solid #4078d4; text-align: center; }
+
+.botao-gerar, .botao-validar { cursor:pointer; }
+
+
+.tabela { width: 100%; border: 1px solid #000000; }
+.dados { width: 35px; }
