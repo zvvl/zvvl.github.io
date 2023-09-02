@@ -2,7 +2,8 @@
 @media all and (orientation:portrait) {
 /* Portrait styles */
 .randbg {
-background: black url('../images/1.jpg') no-repeat center center fixed;
+/* background: black url('../images/1.jpg') no-repeat center center fixed; */
+background: black no-repeat center center fixed;
 background-size: 100vw auto;
   }
 .overlay {
@@ -19,7 +20,8 @@ background-size: 100vw auto;
 @media all and (orientation:landscape) {
 /* Landscape styles */
 .randbg {
-background: black url('../images/1.jpg') no-repeat center center fixed;
+/* background: black url('../images/1.jpg') no-repeat center center fixed; */
+background: black no-repeat center center fixed;
 background-size: auto 100vh;
   }
 .overlay {
