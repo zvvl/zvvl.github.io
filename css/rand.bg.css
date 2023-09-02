@@ -5,6 +5,15 @@
 background: black url('../images/1.jpg') no-repeat center center fixed;
 background-size: 100vw auto;
   }
+.overlay {
+    opacity:0;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+  }
 }
 /* Landscape */
 @media all and (orientation:landscape) {
@@ -12,6 +21,15 @@ background-size: 100vw auto;
 .randbg {
 background: black url('../images/1.jpg') no-repeat center center fixed;
 background-size: auto 100vh;
+  }
+.overlay {
+    opacity:0;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
   }
 }
 
