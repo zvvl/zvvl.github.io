@@ -4,7 +4,7 @@
 
         var settings = $.extend({
             ClassPrefix: "bg",
-            count: 11
+            count: 12
         }, options);
         
         var index = Math.ceil(Math.random() * settings.count * settings.count) % settings.count;
