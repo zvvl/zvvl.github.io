@@ -5,6 +5,31 @@
   Auxílio visual para suporte ativação 2FA MPF
 </title>
 <style>
+.tooltip {
+    position: relative;
+#    left: -30px;
+    display: inline-block;
+#    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #FFFFFF;
+    color: #fff;
+    text-align: left;
+#    border: 1px dotted black;
+    border-radius: 1px;
+    padding: 0px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 body {
   font-family: 'Gill Sans Extrabold', Helvetica, sans-serif;
 }
@@ -160,15 +185,17 @@ div.desc {
     <a target="_blank" href="10.png">
       <img src="10.png" width="600" height="400">
     </a>
-    <div class="desc"><b>IMAGEM 10</b><br>Tela do app Google Authenticator</div>
+    <div class="desc"><b>IMAGEM 10</b><br>⚠️ USAR SEM UMA CONTA ⚠️</div>
   </div>
 </div>
 
 <div class="mexemexe">
-  <div class="galeria">
+  <div class="galeria"><div class="tooltip">
     <a target="_blank" href="11.png">
       <img src="11.png" width="600" height="400">
-    </a>
+    </a><span class="tooltiptext">
+      <img src="14-hover.png" alt="" />
+  </span></div>
     <div class="desc"><b>IMAGEM 11</b><br>Tela do app Google Authenticator</div>
   </div>
 </div>
@@ -200,7 +227,7 @@ div.desc {
     <a target="_blank" href="14.png">
       <img src="14.png" width="600" height="400">
     </a>
-    <div class="desc"><b>✔️ IMAGEM 14 ✔️</b><br>Ícones corretos: sem conta logada</div>
+    <div class="desc"><b>IMAGEM 14</b><br>Ícones corretos: sem conta logada</div>
   </div>
 </div>
 
@@ -226,7 +253,7 @@ div.desc {
 
 <div style="padding:6px;">
   <br><br><br><br>
-  <p align=right style="font-size:12px;">Rafael Cascaes - ver.2312131509</p>
+  <p align=right style="font-size:12px;">Rafael Cascaes - ver.2402011524</p>
 </div>
 
 </body>
