@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de pesquisa no Gmail</title>
+</head>
+<body>
+    <script>
+
+            // Definir strings
+            let string1 = "https://mail.google.com/mail/u/0/#search/after:";
+            let string2 = "+before:";
+
+            // Monta data 1 (hoje)
+            let currentDate = new Date();
+            let currentYear = currentDate.getFullYear();
+            let currentMonth = currentDate.getMonth() + 1;
+            currentMonth = currentMonth < 10 ? '0' + currentMonth : currentMonth;
+            let currentDay = currentDate.getDate();
+            currentDay = currentDay < 10 ? '0' + currentDay : currentDay;
+
+            // Monta data 2 (amanhã)
+            let tomorrowDate = new Date();
+            tomorrowDate.setDate(tomorrowDate.getDate() + 1);
+            let tomorrowYear = tomorrowDate.getFullYear();
+            let tomorrowMonth = tomorrowDate.getMonth() + 1;
+            tomorrowMonth = tomorrowMonth < 10 ? '0' + tomorrowMonth : tomorrowMonth;
+            let tomorrowDay = tomorrowDate.getDate();
+            tomorrowDay = tomorrowDay < 10 ? '0' + tomorrowDay : tomorrowDay;
+
+            // Formata datas
+            let date1 = `${currentYear}/${currentMonth}/${currentDay}`;
+            let date2 = `${tomorrowYear}/${tomorrowMonth}/${tomorrowDay}`;
+            let date3 = `${currentDay}/${currentMonth}/${currentYear}`;
+
+            // Converte datas pra encoding UTF-8
+            let utf8EncodedDate1 = encodeURIComponent(date1);
+            let utf8EncodedDate2 = encodeURIComponent(date2);
+
+            // Prompt para seleção do usuário
+            let texticulo = "Chamados SNP na data " + date3 +"\n\nEscolha seu tipo de pesquisa:\n\nOK = chamados ATRIBUÍDOS a um técnico do CENAR\n\nCANCELAR = chamados ABERTOS ao CENAR";
+            let choice = confirm(texticulo);
+
+            // Monta a URL de acordo com a escolha do usuárioConstruct the URL based on the user's choice
+            if (choice) {
+                // Opcao 1
+                let url = string1 + utf8EncodedDate1 + string2 + utf8EncodedDate2 + "+%22Atribu%C3%ADdo+para%22";
+                window.location.href = url;
+            } else {
+                // Opcao 2
+                let url = string1 + utf8EncodedDate1 + string2 + utf8EncodedDate2 + "+%22Abertura+de+pedido%22";
+                window.location.href = url;
+            }
+
+    </script>
+</body>
+</html>
