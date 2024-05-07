@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de pesquisa no Gmail</title>
+</head>
+<body>
+    <script>
+
+            // Definir strings
+            let string1 = "https://mail.google.com/mail/u/0/#search/after:";
+            let string2 = "+before:";
+
+            // Monta data 1 (ontem)
+            let yesterDate = new Date();
+            yesterDate.setDate(yesterDate.getDate() - 1);
+            let yesterYear = yesterDate.getFullYear();
+            let yesterMonth = yesterDate.getMonth() + 1;
+            yesterMonth = yesterMonth < 10 ? '0' + yesterMonth : yesterMonth;
+            let yesterDay = yesterDate.getDate();
+            yesterDay = yesterDay < 10 ? '0' + yesterDay : yesterDay;
+
+            // Monta data 2 (hoje)
+            let currentDate = new Date();
+            let currentYear = currentDate.getFullYear();
+            let currentMonth = currentDate.getMonth() + 1;
+            currentMonth = currentMonth < 10 ? '0' + currentMonth : currentMonth;
+            let currentDay = currentDate.getDate();
+            currentDay = currentDay < 10 ? '0' + currentDay : currentDay;
+
+
+            // Formata datas
+            let date1 = `${yesterYear}/${yesterMonth}/${yesterDay}`;
+            let date2 = `${currentYear}/${currentMonth}/${currentDay}`;
+
+            // Converte datas pra encoding UTF-8
+            let utf8EncodedDate1 = encodeURIComponent(date1);
+            let utf8EncodedDate2 = encodeURIComponent(date2);
+
+            // Monta a URL
+                let url = string1 + utf8EncodedDate1 + string2 + utf8EncodedDate2;
+                window.location.href = url;
+
+    </script>
+</body>
+</html>
