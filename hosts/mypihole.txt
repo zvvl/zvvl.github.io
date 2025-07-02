@@ -1,0 +1,41 @@
+# Title: R-Block
+#
+# Date: 02 July 2025 19:57:00
+#
+# Fetch the latest version of this file: https://titico.com.br/hosts/mypihole.txt
+#
+# ===============================================================
+
+0.0.0.0 0.0.0.0
+
+# Custom host records are listed here.
+
+# End of custom host records.
+
+# Start R-Block
+
+#=====================================
+
+0.0.0.0 telemetry.zoom.us	
+0.0.0.0 ampproject.org	
+0.0.0.0 samsungacr.com
+0.0.0.0 samsungcloud.tv
+0.0.0.0 samsungcloudsolution.com	
+0.0.0.0 samsungcloudcdn.com	
+0.0.0.0 samsungotn.net	
+0.0.0.0 fusebox.fm	
+0.0.0.0 helpscout.net	
+0.0.0.0 typekit.net	
+0.0.0.0 officeclient.microsoft.com	
+0.0.0.0 officeapps.live.com	
+0.0.0.0 data.microsoft.com	
+0.0.0.0 facebook.com	
+0.0.0.0 fbcdn.net	
+0.0.0.0 facebook.net	
+0.0.0.0 adskeeper.com	
+0.0.0.0 sjv.io	
+0.0.0.0 unattr.com	
+0.0.0.0 duperysitcom.shop	
+0.0.0.0 succahsamabel.top	
+0.0.0.0 discordapp.com	
+0.0.0.0 widgetbot.io
