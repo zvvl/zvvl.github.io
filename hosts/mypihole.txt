@@ -19,10 +19,10 @@
 0.0.0.0 telemetry.zoom.us	
 0.0.0.0 ampproject.org	
 0.0.0.0 samsungacr.com
-0.0.0.0 samsungcloud.tv
+0.0.0.0 qoe.samsungcloud.tv
 0.0.0.0 samsungcloudsolution.com	
 0.0.0.0 samsungcloudcdn.com	
-0.0.0.0 samsungotn.net	
+0.0.0.0 samsungotn.net
 0.0.0.0 fusebox.fm	
 0.0.0.0 helpscout.net	
 0.0.0.0 typekit.net	
