@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEW - Streaming de Filmes, Séries e Animes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">VIDEW</h1>
+            <p class="tagline">Sua plataforma de streaming favorita</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Search Section -->
+            <section class="search-section">
+                <h2>Pesquisar Filmes, Séries e Animes</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Digite o nome do filme, série ou anime..." />
+                    <button id="searchBtn" class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        Buscar
+                    </button>
+                </div>
+            </section>
+
+            <!-- Loading -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Buscando...</p>
+            </div>
+
+            <!-- Search Results -->
+            <section id="searchResults" class="search-results hidden">
+                <h3>Resultados da Pesquisa</h3>
+                <div id="resultsContainer" class="results-container">
+                    <!-- Results will be populated here -->
+                </div>
+            </section>
+
+            <!-- Player Section -->
+            <section id="playerSection" class="player-section hidden">
+                <h3 id="playerTitle">Reproduzindo</h3>
+                <div id="playerContainer" class="player-container">
+                    <!-- Player iframe will be loaded here -->
+                </div>
+                
+                <!-- Disclaimer -->
+                <div class="disclaimer">
+                    <p><strong>Aviso:</strong> Este site não hospeda nenhum conteúdo e apenas indexa temporariamente links encontrados na internet.</p>
+                </div>
+
+                <!-- CTAs -->
+                <div class="cta-section">
+                    <div class="cta-card telegram">
+                        <div class="cta-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                            </svg>
+                        </div>
+                        <div class="cta-content">
+                            <h4>Mantenha-se Informado</h4>
+                            <p>O site pode cair ou ser removido. Entre no nosso canal do Telegram para se manter informado sobre atualizações e novos links.</p>
+                            <a href="https://t.me/videwxyz" target="_blank" class="cta-btn">Entrar no Telegram</a>
+                        </div>
+                    </div>
+
+                    <div class="cta-card donation">
+                        <div class="cta-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <div class="cta-content">
+                            <h4>Apoie o Projeto</h4>
+                            <p>Este site não gera nenhum tipo de receita e depende de doações para se manter online. Sua contribuição faz a diferença!</p>
+                            <a href="https://livepix.gg/videw" target="_blank" class="cta-btn">Fazer Doação</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 VIDEW. Todos os direitos reservados.</p>
+            <p>Este site não hospeda conteúdo e apenas indexa links temporariamente.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
